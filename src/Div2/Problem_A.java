@@ -1,0 +1,32 @@
+package Codeforces_Question.Div2;
+
+import java.util.*;
+public class Problem_A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-->0){
+            int n = sc.nextInt();
+            String s = sc.next();
+            int ans=count(s);
+            for(int i=0; i<n-1; i++){
+                String a = s.substring(0, i+1);
+                String b = s.substring(i+1, n);
+                String r = b+a;
+
+                ans = Math.max(ans, count(r));
+            }
+            System.out.println(ans);
+        }
+    }
+    public static int count(String s){
+        int count=1;
+        int n = s.length();
+        for(int i=0; i<n-1; i++){
+            if(s.charAt(i)!=s.charAt(i+1)){
+                count++;
+            }
+        }
+        return count;
+    }
+}
