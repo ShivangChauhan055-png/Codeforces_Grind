@@ -1,4 +1,4 @@
-package Codeforces_Question.Div2;
+package Div2;
 
 import java.util.*;
 public class Problem_B {
