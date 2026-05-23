@@ -1,4 +1,4 @@
-# Codeforces Grind 🚀
+# Codeforces Grind 
 
 This repository contains my solutions to problems from Codeforces contests and practice.
 
