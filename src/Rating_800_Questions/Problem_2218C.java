@@ -8,11 +8,15 @@ public class Problem_2218C {
         int t = sc.nextInt();
         while(t-->0){
             int n = sc.nextInt();
+            int l = 1;
+            int r = 3 * n;
             StringBuilder sb = new StringBuilder();
-            for (int i = 1; i < n; i++) {
-                sb.append(i).append(" ");
-                sb.append(i+n).append(" ");
-                sb.append(i+2*n).append(" ");
+            for (int i = 0; i < n; i++) {
+                sb.append(l).append(" ");
+                sb.append(r - 1).append(" ");
+                sb.append(r).append(" ");
+                l++;
+                r -= 2;
             }
             System.out.println(sb);
         }
